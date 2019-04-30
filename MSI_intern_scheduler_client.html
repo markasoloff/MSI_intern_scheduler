@@ -3,23 +3,36 @@
   <head>
     <meta charset="UTF-8">
     <title>MSI Intern Scheduler</title>
-    <link rel="stylesheet" href="./resources/css/style.css" type="text/css">
+    
+<!-- Bootstrap css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<!-- Greta css -->
+    <link rel="stylesheet" href="style.css" type="text/css">
   </head>
   <body>
-
     <header>
       <div class="banner">
         <h1>MSI Intern Scheduler</h1>
         <h3>Please enter the names of the interns you wish to schedule</h3>
-        <form action="" method="get" id="name-form">
-          <div class="input-receiver">
-            <label for="name">Enter name of intern: </label>
-            <input type="text" name="name" id="name" required>
-            <br>
-            <input type="submit" value="Schedule!">
+
+<!-- bootstrap form -->
+        <form>
+          <div class="form-group">
+            <!-- <label for="name">Enter name of intern:</label> -->
+            <input type="name" class="form-control" id="name" placeholder="Enter name of intern">
           </div>
+          <button type="submit" class="btn btn-primary" onclick="console.log('click')">Submit</button>
         </form>
-        <span>Hello!</span>
-          <script src="scripts.js"/>
+
+
+
       </div>
+<!-- bootstrap javaScript dependencies -->
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<!-- Mark's javaScript -->
+        <script src="scripts.js"/>
     </header>
+</html>
