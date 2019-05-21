@@ -19,9 +19,17 @@
         <form>
           <div class="form-group">
             <!-- <label for="name">Enter name of intern:</label> -->
-            <input type="name" class="form-control" id="name" placeholder="Enter name of intern">
+            <input type="studentName" class="form-control" placeholder="Enter name of intern">
           </div>
-          <button type="submit" class="btn btn-primary" onclick="console.log('click')">Submit</button>
+          <button type="button" class="btn btn-primary" onclick="nameGetter()">NameGetter</button>
+
+          <script type="text/javascript">
+            function nameGetter() {  
+              var inputName = "Test Mark";
+              localStorage.setItem("name", inputName);
+              console.log(localStorage);
+            }
+          </script>
         </form>
 
 
