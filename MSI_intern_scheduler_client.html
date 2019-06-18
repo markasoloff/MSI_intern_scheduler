@@ -19,17 +19,35 @@
         <form>
           <div class="form-group">
             <!-- <label for="name">Enter name of intern:</label> -->
-            <input type="studentName" class="form-control" placeholder="Enter name of intern">
+            <input id="name" type="studentName" class="form-control" placeholder="Enter name of intern">
           </div>
-          <button type="button" class="btn btn-primary" onclick="nameGetter()">NameGetter</button>
+            <button type="button" class="btn btn-primary" onclick="arrayMaker()">Add Name to Array</button>
 
-          <script type="text/javascript">
+             <script type="text/javascript">
+              var array = ["test"];
+               function arrayMaker() {  
+                 var newName = document.getElementsByClassName("form-control").value;
+                 var array = array.push(string(newName));
+                 console.log(array);
+               }
+             </script>
+
+
+
+
+        <!--   <button type="button" class="btn btn-primary" onclick="nameGetter()">NameGetter</button> -->
+
+         <!--  <script type="text/javascript">
             function nameGetter() {  
-              var inputName = "Test Mark";
-              localStorage.setItem("name", inputName);
+              var inputName = document.getElementsByClassName("form-control");
+              localStorage.setItem("Name", inputName[0]);
               console.log(localStorage);
             }
-          </script>
+          </script> -->
+
+
+          <script src="scripts.js"></script>
+
         </form>
 
 
